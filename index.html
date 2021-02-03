@@ -1,76 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>HomePage</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="js/script.js"></script>	
-  </head>
-  <body>
-    <nav>
-      <ul id="navbar">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="hobbies.html">Hobbies</a>
-        </li>
-        <li>
-          <a href="resume.html">Resume</a>
-        </li>
-		<li>
-		  <a href="map.html">Map</a>
-		</li>
-      </ul>
-    </nav>
-	<div class="center">
-	  <h1>HomePage</h1>
-      <h3>Me with a Cessna 152</h3>
-      <img src="media/a1.JPG" alt="a1" class="index">
-      <h3>Here's some memes I like:</h3>
-        <div class="slidercontainer">  
-        <div class="showSlide fade">  
-            <img src="media/m1.jpg" alt="m1" />  
-            <div class="content">1</div>  
-        </div>  
-        <div class="showSlide fade">  
-            <img src="media/m2.jpg" alt ="m2"/>  
-            <div class="content">2</div>  
-        </div>  
-  
-        <div class="showSlide fade">  
-            <img src="media/m3.jpg" alt ="m3"/>  
-            <div class="content">3</div>  
-        </div>  
-        <div class="showSlide fade">  
-            <img src="media/m4.jpg" alt ="m4"/>  
-            <div class="content">4</div>  
-        </div>
-        </div>		
-        <a class="left" onclick="nextSlide(-1)">❮</a>  
-        <a class="right" onclick="nextSlide(1)">❯</a>  
-    </div>
-	
-	<script>  
-        var slide_index = 1;  
-        displaySlides(slide_index);  
-        function nextSlide(n) {  
-            displaySlides(slide_index += n);  
-        }  
-        function currentSlide(n) {  
-            displaySlides(slide_index = n);  
-        }  
-        function displaySlides(n) {  
-            var i;  
-            var slides = document.getElementsByClassName("showSlide");  
-            if (n > slides.length) { slide_index = 1 }  
-            if (n < 1) { slide_index = slides.length }  
-            for (i = 0; i < slides.length; i++) {  
-                slides[i].style.display = "none";  
-            }  
-            slides[slide_index - 1].style.display = "block";  
-        }  
-    </script>  	
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>ITMD-361 Internet Technologies and Web Design</title>
+<h1>Lab 1</h1>
+</head>
+<body>
+  <p> My name is Malik Roberson, I am a 4th year ITM student and from Bolingbrook, IL. </p>
+  <p> I have some html knowledge from 361. </p>
+</body>
 </html>
+ 
